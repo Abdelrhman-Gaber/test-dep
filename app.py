@@ -3,7 +3,7 @@ import pandas as pd
 import streamlit as st
 import joblib
 
-regressor=joblib.load('model.pkl')
+regressor=joblib.load('model_dep.pkl')
 df = pd.read_csv('bmw.csv')
 
 def predict_bmwcar(model,	year,	transmission,	mileage	,fuelType,	tax	,mpg,	engineSize):
